@@ -32,12 +32,24 @@ function App() {
           onClick={() => {
             pushDataLayer({
               event: "mitra_analytics_metric_clicked",
-              metric_name: "Performa Pasgar",
+              metric_name: "performa_pasgar",
               status_name: "Baik",
             });
           }}
         >
-          Metric Clicked
+          Metric Clicked performa_pasgar
+        </button>
+        <button
+          type="button"
+          onClick={() => {
+            pushDataLayer({
+              event: "mitra_analytics_metric_clicked",
+              metric_name: "sku_produk",
+              status_name: "Baik",
+            });
+          }}
+        >
+          Metric Clicked sku_produk
         </button>
         <button
           type="button"
@@ -52,24 +64,59 @@ function App() {
           onClick={() => {
             pushDataLayer({
               event: "mitra_analytics_info_level_clicked",
+              level_name: "Perlu Ditingkatkan",
+            });
+          }}
+        >
+          Info Level Clicked Perlu Ditingkatkan
+        </button>
+        <button
+          type="button"
+          onClick={() => {
+            pushDataLayer({
+              event: "mitra_analytics_info_level_clicked",
+              level_name: "Cukup",
+            });
+          }}
+        >
+          Info Level Clicked Cukup
+        </button>
+        <button
+          type="button"
+          onClick={() => {
+            pushDataLayer({
+              event: "mitra_analytics_info_level_clicked",
               level_name: "Baik",
             });
           }}
         >
-          Info Level Clicked
+          Info Level Clicked Baik
         </button>
         <button
           type="button"
           onClick={() => {
             pushDataLayer({
               event: "mitra_analytics_cta_clicked",
-              metric_name: "Performa Pasgar",
+              metric_name: "performa_pasgar",
               status_name: "Baik",
               button_name: "Tambah Pasgar",
             });
           }}
         >
-          CTA Clicked
+          CTA Clicked Tambah Pasgar
+        </button>
+        <button
+          type="button"
+          onClick={() => {
+            pushDataLayer({
+              event: "mitra_analytics_cta_clicked",
+              metric_name: "sku_produk",
+              status_name: "Baik",
+              button_name: "Tambah Produk",
+            });
+          }}
+        >
+          CTA Clicked Tambah Produk
         </button>
       </div>
     </>
