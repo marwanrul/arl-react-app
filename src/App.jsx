@@ -118,6 +118,12 @@ function App() {
         >
           CTA Clicked Tambah Produk
         </button>
+        <button
+          type="button"
+          onClick={() => pushDataLayer({ event: "mitra_analytics_closed" })}
+        >
+          Closed
+        </button>
       </div>
     </>
   );
