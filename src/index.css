@@ -21,13 +21,32 @@ body {
   min-height: 100vh;
 }
 
+.title-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
   text-align: center;
 }
 
-.wrapper {
+.btn-wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

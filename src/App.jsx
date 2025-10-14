@@ -1,3 +1,5 @@
+import viteLogo from "/vite.svg";
+
 function App() {
   const pushDataLayer = (item) => {
     window.datalayer = window.dataLayer || [];
@@ -6,8 +8,13 @@ function App() {
 
   return (
     <>
-      <h1>ARL React App</h1>
-      <div className="wrapper">
+      <div className="title-wrapper">
+        <a href="https://vite.dev" target="_blank">
+          <img src={viteLogo} className="logo" alt="Vite logo" />
+        </a>
+        <h1>ARL React App</h1>
+      </div>
+      <div className="btn-wrapper">
         <button
           type="button"
           onClick={() => pushDataLayer({ event: "mitra_analytic_clicked" })}
