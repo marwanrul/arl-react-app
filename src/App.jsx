@@ -17,13 +17,13 @@ function App() {
       <div className="btn-wrapper">
         <button
           type="button"
-          onClick={() => pushDataLayer({ event: "mitra_analytic_clicked" })}
+          onClick={() => pushDataLayer({ event: "mitra_analytics_clicked" })}
         >
           Clicked
         </button>
         <button
           type="button"
-          onClick={() => pushDataLayer({ event: "mitra_analytic_view" })}
+          onClick={() => pushDataLayer({ event: "mitra_analytics_view" })}
         >
           View
         </button>
