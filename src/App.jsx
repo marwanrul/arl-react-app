@@ -124,6 +124,22 @@ function App() {
         >
           Closed
         </button>
+        <button
+          type="button"
+          onClick={() => {
+            pushDataLayer({ event: "button_click", type: "decrement" });
+          }}
+        >
+          Decrement
+        </button>
+        <button
+          type="button"
+          onClick={() => {
+            pushDataLayer({ event: "button_click", type: "increment" });
+          }}
+        >
+          Increment
+        </button>
       </div>
     </>
   );
