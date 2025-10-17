@@ -48,7 +48,8 @@ body {
   text-decoration: none;
 }
 
-.link-wrapper a:visited {
+.link-wrapper a:visited,
+.link-wrapper a:link {
   color: inherit;
 }
 
