@@ -1,6 +1,9 @@
+import usePageTitle from "../hooks/usePageTitle";
 import { pushDataLayer } from "../helpers/utils";
 
 function About() {
+  usePageTitle("ARL React App - About");
+
   return (
     <div className="btn-wrapper">
       <button
