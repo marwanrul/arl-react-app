@@ -29,6 +29,38 @@ body {
   padding: 16px;
 }
 
+.link-wrapper {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.link-wrapper a {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  text-decoration: none;
+}
+
+.link-wrapper a:visited {
+  color: inherit;
+}
+
+.link-wrapper a:hover {
+  border-color: #646cff;
+}
+
+.link-wrapper a:focus,
+.link-wrapper a:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -65,9 +97,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -78,6 +112,7 @@ button:focus-visible {
     color: #213547;
     background-color: #ffffff;
   }
+
   button {
     background-color: #f9f9f9;
   }
